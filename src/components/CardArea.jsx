@@ -32,7 +32,7 @@ export default function CardArea() {
                 <div className='grid grid-cols-1 gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {
                         projects.map((project) => (
-                            <CardPj title={project.title} desc={project.description} urlRp={project.url} src={project.src}></CardPj>
+                            <CardPj title={project.title} desc={project.description} urlRp={project.url} src={project.src} key={project.id}></CardPj>
                         ))
                     }
                 </div>
