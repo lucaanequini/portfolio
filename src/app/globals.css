@@ -13,12 +13,6 @@ body {
   background-color: rgb(32,33,36);
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 
 ::-webkit-scrollbar {
   width: 5px;
