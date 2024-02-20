@@ -28,7 +28,7 @@ export default function Header() {
                 </Link>
             </nav>
             <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-                <i className="bi bi-list icons text-3xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"></i>
+                <i className="bi bi-list icons text-3xl text-white"></i>
             </button>
             {isOpen && (
                 <div className="flex flex-col gap-3 lg:hidden absolute right-0 top-full bg-custom-gray text-white w-full backdrop-blur-lg">
