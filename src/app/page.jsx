@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className='flex flex-col items-center md:px-5 xl:px-36'>
-        <div id='inicio' className='flex flex-col gap-5 md:items-center lg:flex-row lg:mt-20 lg:w-screen xl:px-32'>
+        <div id='inicio' className='flex flex-col gap-5 md:items-center lg:flex-row lg:h-screen lg:w-screen xl:px-32'>
           <HelloContent></HelloContent>
           <Image src={'/real.png'} width={450} height={450} quality={100} alt='profilePic' priority className='rounded-full'></Image>
         </div>
