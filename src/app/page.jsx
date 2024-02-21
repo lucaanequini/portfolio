@@ -1,6 +1,6 @@
 import ContactSection from '@/components/ContactSection';
 import CardAb from '../components/CardAb';
-import CardArea from '../components/CardArea';
+import CardArea from '../components/PjArea';
 import CertificatesSlide from '../components/CertificatesSlide';
 import Footer from '../components/Footer';
 import Image from 'next/image';
