@@ -49,7 +49,7 @@ export default function ContactSection() {
                 <div className='flex flex-col items-center text-white gap-5'>
                     <i className="bi bi-file-earmark-text text-5xl"></i>
                     <p className='text-3xl font-bold'>Currículo</p>
-                    <span className='mb-5'>Download Resume</span>
+                    <span className='mb-5'>Baixar Currículo</span>
                     <a href='/curriculo.pdf'
                         download={'curriculo.pdf'}
                         onClick={() => handleDownloadClick()}
