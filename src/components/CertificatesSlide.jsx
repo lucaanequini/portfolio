@@ -70,6 +70,11 @@ export default function CertificatesSlide() {
                 pagination: false,
                 arrows: true,
                 drag: true,
+                touch: true,
+                autoplay: true,
+                autoplay: {
+                    delay: 200
+                },
                 breakpoints: {
                     1200: {
                         perPage: 1,

@@ -27,7 +27,7 @@ export default function Header() {
                     Contact
                 </Link>
             </nav>
-            <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <button className="px-2 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
                 <i className="bi bi-list icons text-3xl text-white"></i>
             </button>
             {isOpen && (

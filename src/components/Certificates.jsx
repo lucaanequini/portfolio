@@ -13,7 +13,7 @@ export default function Certificates({ url, title, company }) {
                     height: 'auto'
                 }}
             />
-            <p className="w-full h-full flex justify-center items-center font-sm border-t border-dark-blue">
+            <p className="w-full h-full flex justify-center items-center font-sm border-dark-blue">
                 {
                     company === 'OneBitCode' ? (
                         <span className='text-center text-white font-semibold'>

@@ -13,14 +13,14 @@ export default function CardArea() {
             id: 2,
             title: 'Gestor de Estoque',
             src: '/stock-manager.png',
-            url: 'teste',
+            url: 'https://github.com/lucaanequini/stock-manager',
             description: 'Simulador de gestor de estoque desenvolido com ReactJS, dentre suas funcionalidades temos: Adicionar, Remover e Editar produto, vizualizar detalhes de um produto e vizualições perante a data de cadastro do produto.'
         },
         {
             id: 3,
             title: 'OneBitX',
             src: '/falcon.png',
-            url: 'teste',
+            url: 'https://github.com/lucaanequini/OneBitX',
             description: 'Clone da página da SpaceX desenvolvida com HTML e SASS.'
         }
 

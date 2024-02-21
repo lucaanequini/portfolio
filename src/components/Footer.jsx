@@ -15,8 +15,8 @@ export default function Footer() {
                         <i className="bi bi-linkedin duration-200 hover:text-cyan-400"></i>
                     </a>
                 </div>
-                <span className="font-bold">Desenvolvido com ReactJS, Tailwind e NextJS</span>
-                <span className="font-bold">Luca Anequini Antoniazzi ©2023</span>
+                <span className="font-bold mt-5">Luca Anequini Antoniazzi © 2024</span>
+                <span className="font-bold mb-5">Todos os direitos reservados</span>
 
             </footer>
         </>
