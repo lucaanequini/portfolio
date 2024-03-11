@@ -22,7 +22,22 @@ export default function CardArea() {
             src: '/falcon.png',
             url: 'https://github.com/lucaanequini/OneBitX',
             description: 'Clone da página da SpaceX desenvolvida com HTML e SASS.'
-        }
+        },
+        {
+            id: 4,
+            title: 'Weather APP',
+            src: '/weather-app.png',
+            url: 'https://github.com/lucaanequini/weather-project',
+            description: 'Aplicação Clima-Tempo desenvolvida com NextJS, ReactJS e Tailwind CSS, utilizando a API REST "openweathermap" e o armazenamento do navegador.Pesquisar o clima de certa cidade, favoritar e desfavoritar cidades, assim como atualizar os dados das cidades favoritadas são algumas das funcionalidades.'
+        },
+        {
+            id: 5,
+            title: 'TO DO List',
+            src: '/to-do-list.png',
+            url: 'https://github.com/lucaanequini/to-do-list',
+            description: 'Aplicação de Lista de Afazeres desenvolvida com EJS, JS e banco de dados NoSQL (MongoDB). Adicionar, remover e editar listas de tarefas, adicionar, remover e marcar tarefas como conluídas são algumas das funcionalidades.'
+        },
+
 
     ]
     return (

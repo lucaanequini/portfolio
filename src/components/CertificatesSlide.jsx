@@ -52,6 +52,16 @@ const certificates = [
         company: 'OneBitCode'
     },
     {
+        url: '/nodeJS.png',
+        title: 'NodeJS',
+        company: 'OneBitCode'
+    },
+    {
+        url: '/mongoDB.png',
+        title: 'Banco de Dados NoSQL (MongoDB)',
+        company: 'OneBitCode'
+    },
+    {
         url: '/imersao.png',
         title: 'Imersão Front-End',
         company: 'Alura'
