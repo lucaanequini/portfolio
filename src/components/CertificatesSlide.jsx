@@ -62,6 +62,11 @@ const certificates = [
         company: 'OneBitCode'
     },
     {
+        url: '/sql.png',
+        title: 'Banco de Dados SQL',
+        company: 'OneBitCode'
+    },
+    {
         url: '/imersao.png',
         title: 'Imersão Front-End',
         company: 'Alura'
