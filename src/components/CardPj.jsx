@@ -8,7 +8,7 @@ export default function CardPj({ title, urlRp, desc, src, btnContent }) {
             <p className="font-medium text-white text-justify max-w-lg">{desc}</p>
             <div className='flex align-center gap-3'>
                 {urlRp.map((url, i) => (
-                    <a className="" href={url} target="_blank"><button className="bg-transparent text-cyan-400 rounded p-3 border-2 border-cyan-400 duration-200 hover:bg-gradient-to-r from-cyan-400 to-blue-500 hover:text-white">{btnContent[i]}</button></a>
+                    <a key={url} className="" href={url} target="_blank"><button className="bg-transparent text-cyan-400 rounded p-3 border-2 border-cyan-400 duration-200 hover:bg-gradient-to-r from-cyan-400 to-blue-500 hover:text-white">{btnContent[i]}</button></a>
                 ))}
             </div>
 
