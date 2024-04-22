@@ -6,69 +6,18 @@ import Certificates from './Certificates';
 
 const certificates = [
     {
-        url: '/html.png',
-        title: 'HTML5',
-        company: 'OneBitCode'
-
-    },
-    {
-        url: '/css.png',
-        title: 'CSS3',
+        url: '/fullstackJs.png',
+        title: 'FullStack JavaScript',
         company: 'OneBitCode'
     },
     {
-        url: '/css-moderno.png',
-        title: 'CSS Moderno',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/js.png',
-        title: 'JavaScript',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/ts.png',
-        title: 'TypeScript',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/sass.png',
-        title: 'SASS',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/bootstrap.png',
-        title: 'Bootstrap',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/react.png',
-        title: 'React',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/git-e-git-hub.png',
-        title: 'Git e GitHub',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/nodeJS.png',
-        title: 'NodeJS',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/mongoDB.png',
-        title: 'Banco de Dados NoSQL (MongoDB)',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/sql.png',
-        title: 'Banco de Dados SQL',
-        company: 'OneBitCode'
-    },
-    {
-        url: '/imersao.png',
+        url: '/imersaoFront.png',
         title: 'Imersão Front-End',
+        company: 'Alura'
+    },
+    {
+        url: '/imersaoPython.png',
+        title: 'Imersão Python: do Excel a Análise de Dados',
         company: 'Alura'
     }
 ]
@@ -83,25 +32,27 @@ export default function CertificatesSlide() {
                 perMove: 1,
                 width: 1200,
                 pagination: false,
-                arrows: true,
-                drag: true,
-                touch: true,
-                autoplay: true,
-                autoplay: {
-                    delay: 200
-                },
+                arrows: false,
+                drag: false,
+                autoplay: false,
                 breakpoints: {
                     1200: {
                         perPage: 1,
                         width: 600,
+                        arrows: true,
+                        drag: true
                     },
                     600: {
                         perPage: 1,
                         width: 300,
+                        arrows: true,
+                        drag: true
                     },
                     300: {
                         perPage: 1,
                         width: 290,
+                        arrows: true,
+                        drag: true
                     }
                 }
             }}>
