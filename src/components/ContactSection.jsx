@@ -51,7 +51,7 @@ export default function ContactSection() {
                     <p className='text-3xl font-bold'>Currículo</p>
                     <span className='mb-5'>Baixar Currículo</span>
                     <a href='/curriculo.pdf'
-                        download={'curriculo.pdf'}
+                        download={'Currículo-Luca-Antoniazzi.pdf'}
                         onClick={() => handleDownloadClick()}
                     ><i className="bi bi-download text-3xl hover:text-cyan-400"></i></a>
                 </div>
