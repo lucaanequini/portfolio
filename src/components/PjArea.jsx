@@ -76,8 +76,6 @@ export default function CardArea() {
                 <div className='grid grid-cols-1 gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {projects.slice(0, showIndex).map((project) => (
                         <CardPj
-                            data-aos="zoom-in"
-                            data-aos-delay="200"
                             title={project.title}
                             desc={project.description}
                             urlRp={project.url}
