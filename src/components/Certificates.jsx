@@ -17,7 +17,7 @@ export default function Certificates({ url, title, company }) {
                 {
                     company === 'OneBitCode' ? (
                         <span className='text-center text-white font-semibold'>
-                            Módulo de <span className='bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent'>{title}</span> - OnebitCode
+                            <span className='bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent'>{title}</span> - OnebitCode
                         </span>
                     ) : (
                         <span className='text-center text-white font-semibold'>
