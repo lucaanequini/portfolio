@@ -34,19 +34,25 @@ export default function ContactSection() {
         <div className='flex flex-col items-center gap-10'>
             <p className='font-bold text-5xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent'>Contato</p>
             <div className='columns-1  gap-20 sm:columns-3 lg:gap-40 xl:gap-60'>
-                <ItemContact
-                    svg='bi bi-telephone'
-                    title='Telefone'
-                    subtitle='(11) 94294-8562'
-                    svg2='bi bi-clipboard'
-                    action={() => { handleCopyClick() }} />
-                <ItemContact
-                    svg='bi bi-envelope'
-                    title='E-mail'
-                    subtitle='lucanequini@gmail.com'
-                    svg2='bi bi-send-plus'
-                    action={() => { handleEmailButtonClick() }} />
-                <div className='flex flex-col items-center text-white gap-5'>
+                <div data-aos='zoom-in-right'>
+                    <ItemContact
+                        svg='bi bi-telephone'
+                        title='Telefone'
+                        subtitle='(11) 94294-8562'
+                        svg2='bi bi-clipboard'
+                        action={() => { handleCopyClick() }} 
+                    />
+                </div>
+                <div data-aos='zoom-in-right' data-aos-delay='200'>
+                    <ItemContact
+                        svg='bi bi-envelope'
+                        title='E-mail'
+                        subtitle='lucanequini@gmail.com'
+                        svg2='bi bi-send-plus'
+                        action={() => { handleEmailButtonClick() }} 
+                    />
+                </div>
+                <div className='flex flex-col items-center text-white gap-5' data-aos='zoom-in-right' data-aos-delay='400'>
                     <i className="bi bi-file-earmark-text text-5xl"></i>
                     <p className='text-3xl font-bold'>Currículo</p>
                     <span className='mb-5'>Baixar Currículo</span>

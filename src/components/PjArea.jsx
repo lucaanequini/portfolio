@@ -1,4 +1,7 @@
+'use client'
+
 import CardPj from './CardPj'
+import { useState } from 'react';
 
 export default function CardArea() {
     const projects = [
@@ -50,24 +53,46 @@ export default function CardArea() {
             description: 'Projeto final do curso FullStack JS, consiste em uma aplicação fazendo uma releitura da plataforma de cursos da OneBitCode, onde é possível se cadastrar, logar, assistir episódios dos cursos, favoritar, entre outras funcionalidades. Foi desenvolvido com TypeScript, React, NodeJS, NextJS e PostgreSQL.',
             btnContent: ['Ver no GitHub (Front-End)', 'Ver no GitHub (Back-End)']
         },
-
-
+        {
+            id: 7,
+            title: 'Jotion',
+            src: '/jotion.png',
+            url: ['https://github.com/lucaanequini/notion-clone', 'https://note-taking-app-woad-eight.vercel.app/'],
+            description: 'Clone do Notion, com todas as funcionalidades! Desenvolvido com TypeScript, Tailwind CSS, Convex e Clerk Authentication.',
+            btnContent: ['Ver no GitHub', 'Acessar']
+        }
     ]
+
+    const [showIndex, setShowIndex] = useState(3);
+
+    const handleShowMore = () => {
+        setShowIndex(showIndex + 3);
+    };
+
     return (
         <>
             <p className='font-bold text-5xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-10'>Projetos</p>
             <div className='flex justify-center'>
                 <div className='grid grid-cols-1 gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                    {
-                        projects.map((project, btnContent) => (
-                            <CardPj title={project.title} desc={project.description} urlRp={project.url} src={project.src} key={project.id} btnContent={project.btnContent}></CardPj>
-                        ))
-                    }
+                    {projects.slice(0, showIndex).map((project) => (
+                        <CardPj
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
+                            title={project.title}
+                            desc={project.description}
+                            urlRp={project.url}
+                            src={project.src}
+                            key={project.id}
+                            btnContent={project.btnContent}
+                        />
+                    ))}
                 </div>
             </div>
+            {showIndex < projects.length && (
+                <button className="mt-5 border-2 rounded py-3 px-5 hover:bg-transparent hover:border-cyan-400 hover:duration-200 hover:bg-gradient-to-r from-cyan-400 to-blue-500 text-white" onClick={handleShowMore}>
+                    Ver Mais
+                </button>
+            )}
         </>
-
-
-
     )
 }
