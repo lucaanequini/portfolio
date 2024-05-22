@@ -11,7 +11,7 @@ export default function Footer() {
 
                         </i>
                     </a>
-                    <a className="text-4xl" href="https://github.com/lucaanequini" target="_blank" rel="noopener noreferrer">
+                    <a className="text-4xl" href="https://www.linkedin.com/in/luca-anequini-antoniazzi/" target="_blank" rel="noopener noreferrer">
                         <i className="bi bi-linkedin duration-200 hover:text-cyan-400"></i>
                     </a>
                 </div>
